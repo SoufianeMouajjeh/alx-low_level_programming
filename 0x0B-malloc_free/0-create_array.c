@@ -1,11 +1,13 @@
 #include "main.h"
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
- *
- * Return: Always 0.
- */
+ *  * create_array - Create an array of characters
+ *   * and initialize with a specific char.
+ *    * @size: The size of the array.
+ *     * @c: The character to initialize the array with.
+ *      *
+ *       * Return: If memory allocation fails or size is 0, return NULL.
+ *        *         Otherwise, return a pointer to the created array.
+ *         */
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
