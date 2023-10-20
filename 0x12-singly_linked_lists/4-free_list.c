@@ -5,15 +5,12 @@
  * free_list - Frees a list_t list.
  * @head: A pointer to the head of the list.
  */
-void free_list(list_t *head){
-    int free;
-    if (head == NULL){
-        return;
-    }
-}
-    free_list(head->next);
-if (head->str != NULL)
+void free_list(list_t *head)    
 {
-    free(head->str);
+    if (head == NULL)
+        return (0);
+    free_list(head->next);
+    if (head->str != NULL)
+        free(head->str);
+    free(head);
 }
-free(head);
