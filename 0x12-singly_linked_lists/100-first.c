@@ -11,6 +11,6 @@ void printTextBeforeMain()
 int main()
 {
     printTextBeforMain();
-    printf("Main function has been executed.\n")
+    printf("Main function has been executed.\n");
     return (0);
 }
