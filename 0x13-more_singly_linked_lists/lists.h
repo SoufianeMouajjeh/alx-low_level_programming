@@ -52,6 +52,6 @@ listint_t *add_nodeint_end(listint_t **head, const int n);
  *
  * Return: free current.
  */
-void gree_listint(listint_t *head);
+void free_listint(listint_t *head);
 
 #endif
