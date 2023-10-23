@@ -10,7 +10,7 @@
  * Return: free current.
  */
 
-void gree_listint(listint_t *head)
+void free_listint(listint_t *head)
 {
     listint_t *current;
     while(head != NULL){
