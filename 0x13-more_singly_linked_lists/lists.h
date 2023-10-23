@@ -46,5 +46,12 @@ listint_t *add_nodeint(listint_t **head, const int n);
  * Return: The number of nodes.
  */
 listint_t *add_nodeint_end(listint_t **head, const int n);
+/**
+ * free_list - free the list .
+ * @h: A pointer to the head of the list.
+ *
+ * Return: free current.
+ */
+void gree_listint(listint_t *head);
 
 #endif
