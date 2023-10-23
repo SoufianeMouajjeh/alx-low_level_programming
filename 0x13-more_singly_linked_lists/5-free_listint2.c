@@ -18,6 +18,6 @@ void free_listint2(listint_t **head)
     {
         current = *head;
         *head = current->next;
-        free(current);
+        free(*head);
     }
 }
