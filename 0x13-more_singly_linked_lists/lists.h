@@ -25,5 +25,12 @@ typedef struct listint_s
  * Return: The number of nodes.
  */
 size_t print_listint(const listint_t *h);
+/**
+ * print_list - returns the number of elements a linked .
+ * @h: A pointer to the head of the list.
+ *
+ * Return: The number of nodes.
+ */
+size_t listint_len(const listint_t *h);
 
 #endif
