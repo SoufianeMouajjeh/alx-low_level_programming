@@ -32,5 +32,12 @@ size_t print_listint(const listint_t *h);
  * Return: The number of nodes.
  */
 size_t listint_len(const listint_t *h);
+/**
+ * print_list - adds a new node at the beginning of a list .
+ * @h: A pointer to the head of the list.
+ *
+ * Return: The number of nodes.
+ */
+listint_t *add_nodeint(listint_t **head, const int n)
 
 #endif
