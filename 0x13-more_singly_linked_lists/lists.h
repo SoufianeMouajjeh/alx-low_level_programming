@@ -38,6 +38,6 @@ size_t listint_len(const listint_t *h);
  *
  * Return: The number of nodes.
  */
-listint_t *add_nodeint(listint_t **head, const int n)
+listint_t *add_nodeint(listint_t **head, const int n);
 
 #endif
