@@ -52,6 +52,13 @@ listint_t *add_nodeint_end(listint_t **head, const int n);
  *
  * Return: free current.
  */
-void gree_listint(listint_t *head);
+void free_listint(listint_t *head);
+/**
+ * free_list - free the list and stes the head to NULL .
+ * @h: A pointer to the head of the list.
+ *
+ * Return: free current.
+ */
+void free_listint2(listint_t **head);
 
 #endif
