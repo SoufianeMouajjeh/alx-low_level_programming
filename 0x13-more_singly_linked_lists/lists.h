@@ -109,4 +109,19 @@ listint_t *reverse_listint(listint_t **head);
  * Return: the number of nodes in the list.
  */
 size_t print_listint_safe(const listint_t *head);
+/**
+ * print_list - frees a list  .
+ * @h: A pointer to the head of the list.
+ *
+ * Return: the size of the list that was free'd.
+ */
+size_t free_listint_safe(listint_t **h);
+/**
+ * print_list - finds the loop in a liked list  .
+ * @h: A pointer to the head of the list.
+ *
+ * Return: the addres of the node where the loop starts, or NULL if there is no loop.
+ */
+listint_t *find_listint_loop(listint_t *head);
+
 #endif
