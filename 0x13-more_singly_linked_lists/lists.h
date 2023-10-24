@@ -102,4 +102,11 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index);
  * Return: a pointer to the first node of the revesed list.
  */
 listint_t *reverse_listint(listint_t **head);
+/**
+ * print_list - prints a list .
+ * @h: A pointer to the head of the list.
+ *
+ * Return: the number of nodes in the list.
+ */
+size_t print_listint_safe(const listint_t *head);
 #endif
