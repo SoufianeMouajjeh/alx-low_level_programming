@@ -60,5 +60,12 @@ void free_listint(listint_t *head);
  * Return: free current.
  */
 void free_listint2(listint_t **head);
+/**
+ * print_list - deletes the head of list .
+ * @h: A pointer to the head of the list.
+ *
+ * Return: the head node's data(n).
+ */
+int pop_listint(listint_t **head);
 
 #endif
