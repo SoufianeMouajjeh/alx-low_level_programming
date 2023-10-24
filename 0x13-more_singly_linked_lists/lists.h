@@ -88,4 +88,11 @@ int sum_listint(listint_t *head);
  * Return: the sum of data(n).
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
+/**
+ * print_list - deletes the node at index of a list .
+ * @h: A pointer to the head of the list.
+ *
+ * Return: 1 if succeeded -1 if it failed.
+ */
+int delete_nodeint_at_index(listint_t **head, unsigned int index);
 #endif
