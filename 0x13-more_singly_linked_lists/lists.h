@@ -74,4 +74,11 @@ int pop_listint(listint_t **head);
  * Return: the nth node of list.
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
+/**
+ * print_list - returns the sum of all the data (n) of a list .
+ * @h: A pointer to the head of the list.
+ *
+ * Return: the sum of data(n).
+ */
+int sum_listint(listint_t *head);
 #endif

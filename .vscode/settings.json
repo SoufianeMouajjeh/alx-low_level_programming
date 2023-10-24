@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "main.h": "c",
-        "sstream": "c"
+        "sstream": "c",
+        "lists.h": "c"
     }
 }
