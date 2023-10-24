@@ -81,4 +81,11 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
  * Return: the sum of data(n).
  */
 int sum_listint(listint_t *head);
+/**
+ * print_list - inserts a new node at a given position .
+ * @h: A pointer to the head of the list.
+ *
+ * Return: the sum of data(n).
+ */
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 #endif

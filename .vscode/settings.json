@@ -2,6 +2,7 @@
     "files.associations": {
         "main.h": "c",
         "sstream": "c",
-        "lists.h": "c"
+        "lists.h": "c",
+        "string.h": "c"
     }
 }
