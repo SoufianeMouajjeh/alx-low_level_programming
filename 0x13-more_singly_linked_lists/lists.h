@@ -11,12 +11,12 @@
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- * 
+ *
  */
 typedef struct listint_s
 {
-    int n;
-    struct listint_s *next;
+	int n;
+	struct listint_s *next;
 } listint_t;
  /**
  * print_list - Prints all the elements of a list_t list.
@@ -120,7 +120,7 @@ size_t free_listint_safe(listint_t **h);
  * print_list - finds the loop in a liked list  .
  * @h: A pointer to the head of the list.
  *
- * Return: the addres of the node where the loop starts, or NULL if there is no loop.
+ * Return: the addres of node where loop starts, or NULL if there is no loop.
  */
 listint_t *find_listint_loop(listint_t *head);
 
