@@ -12,7 +12,7 @@
  * pointer to the new head (the second node in the list).
  *
  * Return:
- * The integer value stored in the removed head node, or 0 if the list is empty.
+ * The integer value storen the removed head node, or 0 if the list is empty.
  */
 
 int pop_listint(listint_t **head)
