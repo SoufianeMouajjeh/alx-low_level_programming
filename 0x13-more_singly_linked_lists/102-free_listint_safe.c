@@ -17,24 +17,24 @@
 
 size_t free_listint_safe(listint_t **h)
 {
-    size_t size = 0;
-    listint_t *current = *h;
-    listint_t *temp;
+	size_t size = 0;
+	listint_t *current = *h;
+	listint_t *temp;
 
-    while (current != NULL)
-    {
-        size++;
-        temp = current->next;
-        free(current);
-        current = temp;
+	while (current != NULL)
+	{
+		size++;
+		temp = current->next;
+		free(current);
+		current = temp;
 
-        if (temp >= current)
-        {
-            fprintf(stderr, "Linked list has a loop\n");
-            break;
-        }
-    }
-    *h = NULL;
+		if (temp >= current)
+		{
+			fprintf(stderr, "Linked list has a loop\n");
+			break;
+		}
+	}
+	*h = NULL;
 
-    return size;
+	return (size);
 }
