@@ -18,109 +18,101 @@ typedef struct listint_s
 	int n;
 	struct listint_s *next;
 } listint_t;
- /**
- * print_list - Prints all the elements of a list_t list.
- * @h: A pointer to the head of the list.
- *
- * Return: The number of nodes.
+/**
+ * print_listint - Print all elements of a listint_t list
+ * @h: A pointer to the listint_t list
+ * Return: The number of nodes in the list
  */
 size_t print_listint(const listint_t *h);
 /**
- * print_list - returns the number of elements a linked .
- * @h: A pointer to the head of the list.
+ * listint_len - Print number of elements of a listint_t list
+ * @h: A pointer to the listint_t list
  *
- * Return: The number of nodes.
+ * Return: The number of elements in the list
  */
 size_t listint_len(const listint_t *h);
 /**
- * print_list - adds a new node at the beginning of a list .
- * @h: A pointer to the head of the list.
- *
- * Return: The number of nodes.
+ * add_nodeint - Add a new node at the beginning of a listint_t list
+ * @head: A pointer to a pointer to the head of the list
+ * @n: The integer data for the new node
+ * Return: The address of the new element, or NULL if it fails
  */
 listint_t *add_nodeint(listint_t **head, const int n);
 /**
- * print_list - adds a new node at the and of a list .
- * @h: A pointer to the head of the list.
- *
- * Return: The number of nodes.
+ * add_nodeint_end - Add a new node at the end of a listint_t list
+ * @head: A pointer to a pointer to the head of the list
+ * @n: The integer data for the new node
+ * Return: The address of the new element, or NULL if it fails
  */
 listint_t *add_nodeint_end(listint_t **head, const int n);
 /**
- * free_list - free the list .
- * @h: A pointer to the head of the list.
- *
- * Return: free current.
+ * free_listint - Frees a listint_t list
+ * @head: A pointer to the head of the list
  */
 void free_listint(listint_t *head);
 /**
- * free_list - free the list and stes the head to NULL .
- * @h: A pointer to the head of the list.
- *
- * Return: free current.
+ * free_listint2 - Frees a listint_t list and sets the head to NULL
+ * @head: A pointer to a pointer to the head of the list
  */
 void free_listint2(listint_t **head);
 /**
- * print_list - deletes the head of list .
- * @h: A pointer to the head of the list.
- *
- * Return: the head node's data(n).
+ * pop_listint - Deletes the head node of a listint_t linked list
+ * and returns the head node's data (n).
+ * @head: A pointer to a pointer to the head of the list
+ * Return: The data of the head node, or 0 if the list is empty
  */
 int pop_listint(listint_t **head);
 /**
- * print_list - returns the nth node of a list .
- * @h: A pointer to the head of the list.
- *
- * Return: the nth node of list.
+ * get_nodeint_at_index - Returns the nth node of a listint_t linked list.
+ * @head: A pointer to the head of the list
+ * @index: The index of the node to retrieve, starting at 0
+ * Return: The nth node, or NULL if the node does not exist
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 /**
- * print_list - returns the sum of all the data (n) of a list .
- * @h: A pointer to the head of the list.
- *
- * Return: the sum of data(n).
+ * sum_listint - Returns the sum of all the data (n) of a
+ * listint_t linked list.
+ * @head: A pointer to the head of the list
+ * Return: The sum of all data, or 0 if the list is empty
  */
 int sum_listint(listint_t *head);
 /**
- * print_list - inserts a new node at a given position .
- * @h: A pointer to the head of the list.
- *
- * Return: the sum of data(n).
+ * insert_nodeint_at_index - Inserts a new node at a given position.
+ * @head: A pointer to a pointer to the head of the list
+ * @idx: The index where the new node should be added, starting at 0
+ * @n: The integer data for the new node
+ * Return: The address of the new node, or NULL if it failed
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 /**
- * print_list - deletes the node at index of a list .
- * @h: A pointer to the head of the list.
- *
- * Return: 1 if succeeded -1 if it failed.
+ * delete_nodeint_at_index - Delete the node specfic index listint linked list
+ * @head: A pointer to a pointer to the head of the list
+ * @index: The index of the node to be deleted (starting at 0)
+ * Return: 1 if it succeeded, -1 if it failed
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
 /**
- * print_list - reverses a list  .
- * @h: A pointer to the head of the list.
- *
- * Return: a pointer to the first node of the revesed list.
+ * reverse_listint - Reverses a listint_t linked list.
+ * @head: A pointer to a pointer to the head of the list.
+ * Return: A pointer to the first node of the reversed list.
  */
 listint_t *reverse_listint(listint_t **head);
 /**
- * print_list - prints a list .
- * @h: A pointer to the head of the list.
- *
- * Return: the number of nodes in the list.
+ * print_listint_safe - Prints listint_t linked list and handles cycles safely.
+ * @head: A pointer to the head of the list.
+ * Return: The number of nodes in the list.
  */
 size_t print_listint_safe(const listint_t *head);
 /**
- * print_list - frees a list  .
- * @h: A pointer to the head of the list.
- *
- * Return: the size of the list that was free'd.
+ * free_listint_safe - Frees a listint_t list.
+ * @h: A pointer to a pointer to the head of the list.
+ * Return: The size of the list that was freed.
  */
 size_t free_listint_safe(listint_t **h);
 /**
- * print_list - finds the loop in a liked list  .
- * @h: A pointer to the head of the list.
- *
- * Return: the addres of node where loop starts, or NULL if there is no loop.
+ * find_listint_loop - Finds the loop in a linked list using Floyd's algorithm.
+ * @head: A pointer to the head of the list.
+ * Return: The address of the node where the loop starts or NULL there is loop.
  */
 listint_t *find_listint_loop(listint_t *head);
 
