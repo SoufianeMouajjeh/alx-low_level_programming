@@ -4,10 +4,18 @@
 #include "lists.h"
 
 /**
- * print_list - inserts a new node at a given position .
- * @h: A pointer to the head of the list.
+ * insert_nodeint_at_index - Inserts node at a specified in a listint_t list.
+ * @head: A pointer to a pointer to the head of the list.
+ * @idx: The index where the new node should be inserted (starting from 0).
+ * @n: The integer value to store in the new node.
  *
- * Return: the sum of data(n).
+ * Description:
+ * This function inserts a new node with the specified integer value at the
+ * given index in a listint_t linked list. If the index is invalid larger
+ * than the list size or negative), the function does not add the new node and
+ * returns NULL. If memory allocation new node fails, it also returns NULL.
+ *
+ * Return: The address the new node if successfully added or NULL if it fails.
  */
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)

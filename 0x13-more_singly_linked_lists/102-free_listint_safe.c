@@ -4,10 +4,15 @@
 #include "lists.h"
 
 /**
- * print_list - frees a list  .
- * @h: A pointer to the head of the list.
+ * free_listint_safe - Frees a listint_t linked list with safety checks.
+ * @h: A pointer to a pointer to the head of the list.
  *
- * Return: the size of the list that was free'd.
+ * Description:
+ * This function frees memory allocated listint_t linked list, ensuring
+ * that it goes through the list only once. function sets the head to NULL
+ * and returns the size of the list that was freed.
+ *
+ * Return: The size of the list that was freed.
  */
 
 size_t free_listint_safe(listint_t **h)
@@ -29,7 +34,6 @@ size_t free_listint_safe(listint_t **h)
             break;
         }
     }
-
     *h = NULL;
 
     return size;

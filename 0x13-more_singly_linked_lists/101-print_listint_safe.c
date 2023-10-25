@@ -4,10 +4,15 @@
 #include "lists.h"
 
 /**
- * print_list - Prints a listint_t linked list .
- * @h: A pointer to the head of the list.
+ * print_listint_safe - Prints a listint_t linked list with safety checks.
+ * @head: A pointer to the head of the list.
  *
- * Return: the number of nodes in the list.
+ * Description:
+ * This function prints the elements listint_t linked list, going through
+ * the list only once. It ensures that it handles the case of failure exiting
+ * the program with status 98. function returns the number nodes list.
+ *
+ * Return: The number of nodes in the list.
  */
 
 size_t print_listint_safe(const listint_t *head)

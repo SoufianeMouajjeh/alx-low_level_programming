@@ -4,10 +4,15 @@
 #include "lists.h"
 
 /**
- * print_list - finds the loop in a liked list  .
- * @h: A pointer to the head of the list.
+ * find_listint_loop - Finds a loop in a listint_t linked list.
+ * @head: A pointer to the head of the list.
  *
- * Return: the addres of the node where the loop starts, or NULL if there is no loop.
+ * Description:
+ * This function checks for the existence of a loop in a listint_t linked list
+ * using Floyd Cycle Detection Algorithm (tortoise and hare). oop is found,
+ * it returns address node where loop starts; otherwise, returns NULL.
+ *
+ * Return: The address node where loop starts, NULL if there is no loop.
  */
 
 listint_t *find_listint_loop(listint_t *head)
