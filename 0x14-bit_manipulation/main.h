@@ -46,4 +46,12 @@ int clear_bit(unsigned long int *n, unsigned int index);
  * Return: 0 if big endian, 1 if little endian.
  */
 int get_endianness(void);
+/**
+ * flip_bits - Counts the number of bits to flip from one number to another.
+ * @n: The first unsigned long integer.
+ * @m: The second unsigned long integer.
+ *
+ * Return: The number of bits needed to flip.
+ */
+unsigned int flip_bits(unsigned long int n, unsigned long int m);
 #endif
