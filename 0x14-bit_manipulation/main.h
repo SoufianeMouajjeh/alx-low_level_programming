@@ -40,4 +40,10 @@ int set_bit(unsigned long int *n, unsigned int index);
  * Return: 1 if it worked, or -1 if an error occurred.
  */
 int clear_bit(unsigned long int *n, unsigned int index);
+/**
+ * get_endianness - Checks the endianness of the system.
+ *
+ * Return: 0 if big endian, 1 if little endian.
+ */
+int get_endianness(void);
 #endif
