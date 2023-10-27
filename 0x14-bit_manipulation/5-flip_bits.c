@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * clear_bit - Sets the value of a bit to 0 at a given index.
- * @n: A pointer to the unsigned long integer.
- * @index: The index of the bit to be cleared (starting from 0).
- *
- * Return: 1 if it worked, or -1 if an error occurred.
+ * flip_bits - Count the number of bits to flip to get from n to m.
+ * @n: The first number.
+ * @m: The second number.
+ * 
+ * Return: The number of bits to flip.
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
