@@ -1,5 +1,6 @@
 #include"main.h"
 #define BUFFER_SIZE 1024
+#include <stdarg.h>
 /**
  * print_error - Print error messages based on the error code
  * @error_code: The error code to determine the message to be printed
@@ -25,6 +26,7 @@ void error_exit(int code, const char *format, ...)
 int main(int argc, char *argv[])
 {
     const char *file_from, *file_to;
+    va_list args;
     int fd_from, fd_to;
     ssize_t bytes_read, bytes_written;
     char buffer[BUFFER_SIZE];
